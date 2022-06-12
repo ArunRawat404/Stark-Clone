@@ -12,7 +12,7 @@ body {
 	width: 26px;
 	height: 26px;
 	border-radius: 100%;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
 	padding: 0.1rem;
 }
 
@@ -26,12 +26,32 @@ body {
 	height: 1px;
 	background-color: #000;
 	transform: rotate(0);
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 
 .hamburger-middle {
 	transform: translateY(6px);
 }
+
 .hamburger-bottom {
 	transform: translateY(12px);
+}
+
+.open {
+	transform: rotate(90deg);
+	transform: translateY(0);
+}
+
+.open .hamburger-top {
+	transform: rotate(45deg) translateY(4px) translateX(4px);
+	height: 2px;
+}
+
+.open .hamburger-middle {
+	display: none;
+}
+
+.open .hamburger-bottom {
+	transform: rotate(-45deg) translateY(4px) translateX(-4px);
+	height: 2px;
 }
