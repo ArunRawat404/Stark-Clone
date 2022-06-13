@@ -55,3 +55,10 @@ body {
 	transform: rotate(-45deg) translateY(4px) translateX(-4px);
 	height: 2px;
 }
+
+.active {
+	background-color: #10284b;
+	border-radius: 9999px;
+	height: 100%;
+	color: #fff;
+}
